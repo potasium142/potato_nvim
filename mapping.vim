@@ -1,26 +1,37 @@
-" mapping for other application
-nnoremap > :><CR>
-nnoremap < :<<CR>
+" Tabbing
+nnoremap <silent> > :><cr>
+nnoremap <silent> < :<<cr>
 
 " Visual tabbing
-vnoremap > :><CR>gv
-vnoremap < :<<CR>gv
+vnoremap <silent> > :><cr>gv
+vnoremap <silent> < :<<cr>gv
 
-nmap <silent> <cr> :noh<cr><cr>
+" Global buffer paste
+nnoremap <silent> \ "+
+vnoremap <silent> \ "+
 
-nmap <silent> <space>w :w<cr>
-nmap <silent> <space>W :wa<cr>
+" Void register
+nnoremap <silent> <BS> "_
+vnoremap <silent> <BS> "_
+nnoremap <silent> x "_x
+vnoremap <silent> x "_x
 
-nmap <silent> <BS> "_
-nmap <silent> \ "+
-vmap <silent> <BS> "_
-vmap <silent> \ "+
+" Clear search highlight
+nnoremap <silent> <CR> :noh<cr><cr>
 
-" nmap <silent> x "_x
-" vmap <silent> x "_x
+" Save
+nnoremap <leader>w :w<cr>
+nnoremap <leader>W :wa<cr>
 
-nmap <silent> <C-j> <C-d>zz
-nmap <silent> <C-k> <C-u>zz
+" Half buffer jump
+nnoremap <silent> <C-j> <C-d>zz
+vnoremap <silent> <C-j> <C-d>zz
+nnoremap <silent> <C-k> <C-u>zz
+vnoremap <silent> <C-k> <C-u>zz
 
-vmap <silent> <C-j> <C-d>zz
-vmap <silent> <C-k> <C-u>zz
+" Disable F1
+inoremap <silent> <F1> <nop>
+nnoremap <silent> <F1> <nop>
+
+" Delete current buffer
+nnoremap <silent> <leader>dd :bdelete<cr>
