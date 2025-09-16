@@ -6,7 +6,6 @@ return {
 		lazy = false,
 		dependencies = {
 			"nvim-lua/plenary.nvim",
-			"folke/noice.nvim",
 		},
 		opts = function()
 			local actions = require("telescope.actions")
