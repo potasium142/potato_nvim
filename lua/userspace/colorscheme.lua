@@ -2,7 +2,7 @@ return {
 	"neanias/everforest-nvim",
 	version = false,
 	lazy = false,
-	enabled = true,
+	enabled = false,
 	priority = 1000,
 	opts = {
 		dim_inactive_windows = false,

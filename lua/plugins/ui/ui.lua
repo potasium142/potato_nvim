@@ -1,6 +1,7 @@
 return {
 	{
 		"MunifTanjim/nui.nvim",
+		enabled = true,
 		config = function()
 			local Input = require("nui.input")
 
@@ -189,7 +190,7 @@ return {
 	},
 	{
 		"folke/noice.nvim",
-		enabled = true,
+		enabled = false,
 		lazy = false,
 		priority = 1000,
 		init = function()
