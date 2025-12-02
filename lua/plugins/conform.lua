@@ -1,5 +1,3 @@
-local formatters = require("loader.lang").formatters
-local fmt_args = require("loader.formatter")
 return {
 	"stevearc/conform.nvim",
 	lazy = true,
@@ -13,7 +11,6 @@ return {
 	end,
 	opts = function()
 		return {
-			formatters_by_ft = formatters,
 			format_after_save = {
 				lsp_fallback = true,
 			},
@@ -29,9 +26,5 @@ return {
 				conform.format({ bufnr = args.buf })
 			end,
 		})
-
-		for fmt, args in pairs(fmt_args) do
-			conform.formatters[fmt] = args
-		end
 	end,
 }

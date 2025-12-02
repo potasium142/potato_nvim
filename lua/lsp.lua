@@ -4,20 +4,6 @@ local default_setup = require("userspace.lsp_capabilities")
 
 return {
 	{
-		"williamboman/mason.nvim",
-		cmd = "Mason",
-		lazy = false,
-		opts = {
-			ui = {
-				icons = {
-					package_installed = "+",
-					package_pending = "!",
-					package_uninstalled = "-",
-				},
-			},
-		},
-	},
-	{
 		"neovim/nvim-lspconfig",
 		lazy = false,
 		config = function()

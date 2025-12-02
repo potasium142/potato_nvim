@@ -1,4 +1,3 @@
-local icons = require("const.icons_text").kinds
 return {
 	{
 		"saghen/blink.cmp",
@@ -66,7 +65,6 @@ return {
 						},
 					},
 				},
-				appearance = { kind_icons = icons },
 			}
 		end,
 	},
