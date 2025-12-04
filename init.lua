@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 		"--single-branch",
 		"https://github.com/folke/lazy.nvim.git",
 		lazypath,
-})
+	})
 end
 
 vim.opt.runtimepath:prepend(lazypath)
@@ -29,6 +29,7 @@ require("lazy").setup({
 	},
 	spec = {
 		{ import = "plugins" },
+		{ import = "nd_plugins" },
 	},
 	performance = {
 		rtp = {
@@ -49,3 +50,4 @@ require("lazy").setup({
 
 require("autocmd")
 require("customcmd")
+require("lsp.lazyload")

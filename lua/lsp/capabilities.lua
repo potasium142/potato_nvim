@@ -1,4 +1,4 @@
-local config = {
+return {
 	capabilities = {
 		workspace = {
 			didChangeWatchedFiles = {
@@ -62,7 +62,4 @@ local config = {
 			},
 		},
 	},
-}
-return {
-	capabilities = vim.tbl_deep_extend("force", vim.lsp.protocol.make_client_capabilities(), config),
 }

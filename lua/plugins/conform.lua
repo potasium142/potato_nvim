@@ -1,3 +1,4 @@
+local formatters = require("fter")
 return {
 	"stevearc/conform.nvim",
 	lazy = true,
@@ -11,9 +12,11 @@ return {
 	end,
 	opts = function()
 		return {
+			formatters_by_ft = formatters.ft_by_type,
 			format_after_save = {
 				lsp_fallback = true,
 			},
+			formatters = formatters.config,
 		}
 	end,
 	config = function(_, opts)

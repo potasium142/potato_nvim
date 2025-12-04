@@ -1,7 +1,5 @@
 local opts = { noremap = true, silent = true }
 
-local default_setup = require("userspace.lsp_capabilities")
-
 return {
 	{
 		"neovim/nvim-lspconfig",
@@ -11,7 +9,6 @@ return {
 				underline = false,
 				virtual_text = false,
 				virtual_lines = { current_line = true },
-				float = { border = default_setup.border },
 				severity_sort = true,
 			})
 		end,
