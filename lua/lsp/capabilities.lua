@@ -1,14 +1,4 @@
-local border = {
-	{ "", "FloatBorder" },
-	{ "", "FloatBorder" },
-	{ "", "FloatBorder" },
-	{ " ", "FloatBorder" },
-	{ "", "FloatBorder" },
-	{ "", "FloatBorder" },
-	{ "", "FloatBorder" },
-	{ " ", "FloatBorder" },
-}
-local config = {
+return {
 	capabilities = {
 		workspace = {
 			didChangeWatchedFiles = {
@@ -72,12 +62,4 @@ local config = {
 			},
 		},
 	},
-	textDocument = {
-		hover = vim.lsp.with(vim.lsp.handlers.hover, { border = border }),
-		signatureHelp = vim.lsp.with(vim.lsp.handlers.signature_help, { border = border }),
-	},
-}
-return {
-	capabilities = vim.tbl_deep_extend("force", vim.lsp.protocol.make_client_capabilities(), config),
-	border = border,
 }

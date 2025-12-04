@@ -1,0 +1,3 @@
+---@class LspConfig
+---@field pattern table
+---@field config? table

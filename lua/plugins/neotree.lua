@@ -1,4 +1,3 @@
-local icons = require("const.icons_text")
 return {
 	"nvim-neo-tree/neo-tree.nvim",
 	dependencies = {
@@ -33,22 +32,6 @@ return {
 					icon.highlight = icon.highlight
 				end,
 				default = ">",
-			},
-			git_status = {
-				symbols = {
-					added = icons.git.FileStaged,
-					modified = icons.git.FileModified,
-					deleted = icons.git.FileDeleted,
-					renamed = icons.git.FileRenamed,
-					untracked = icons.git.FileUntracked,
-					ignored = icons.git.FileIgnored,
-					unstaged = icons.git.FileUnstaged,
-					staged = icons.git.FileStaged,
-					conflict = icons.git.FileConflict,
-				},
-			},
-			modified = {
-				symbol = icons.buffer.Modified,
 			},
 		},
 		window = {
