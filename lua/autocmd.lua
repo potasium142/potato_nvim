@@ -9,7 +9,7 @@ autocmd("FileType", {
 		vim.opt.formatoptions:remove({ "c", "r", "o" })
 	end,
 	group = general,
-	desc = "Disable New Line Comment",
+	desc = "disable new line comment",
 })
 
 autocmd({ "BufLeave", "InsertLeave" }, {
@@ -19,5 +19,5 @@ autocmd({ "BufLeave", "InsertLeave" }, {
 		end
 	end,
 	group = general,
-	desc = "Auto Save",
+	desc = "auto save",
 })

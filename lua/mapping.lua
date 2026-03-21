@@ -27,6 +27,8 @@ map({ "n", "v" }, "<C-k>", "<C-u>zz")
 
 map({ "i", "n" }, "<F1>", "<nop>", opts)
 
+map("i", "<S-Space>", "_")
+
 map("n", "<leader>dd", function()
 	vim.api.nvim_buf_delete(0, {})
 end, opts)

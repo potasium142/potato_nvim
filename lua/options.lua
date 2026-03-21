@@ -14,7 +14,6 @@ vim.opt.autoindent = true
 vim.opt.signcolumn = "yes:2"
 vim.opt.ffs = "unix,dos"
 vim.opt.swapfile = false
-vim.opt.mouse = ""
 vim.opt.relativenumber = true
 vim.opt.guicursor = "i-ci:ver10"
 vim.opt.scrolloff = 7
@@ -31,7 +30,6 @@ vim.opt.listchars = {
 }
 vim.opt.cmdheight = 1
 vim.opt.background = "light"
-
 
 vim.g.loaded_netrwPlugin = 1
 vim.g.loaded_netrw = 1

@@ -39,7 +39,7 @@ local function tab(st_table, nd_table, offset, check_offset)
 	elseif check_bracket(nd_table, pos[2] + check_offset) then
 		exe_tab()
 	else
-		vim.api.nvim_put({ "\t" }, "c", false, true)
+		vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, true, true), "in", true)
 	end
 end
 

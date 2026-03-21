@@ -13,12 +13,21 @@ return {
 		},
 	},
 	---@type LspConfig
+	basedpyright = {
+		pattern = { "*.py", "*.pyx" },
+		config = {
+			analysis = {
+				useTypingExtensions = true,
+			},
+		},
+	},
+	---@type LspConfig
 	pyright = {
-		pattern = { "*.py" },
+		pattern = { "*.py", "*.pyx" },
 	},
 	---@type LspConfig
 	ruff = {
-		pattern = { "*.py" },
+		pattern = { "*.py", "*.pyx" },
 	},
 	---@type LspConfig
 	rust_analyzer = {
