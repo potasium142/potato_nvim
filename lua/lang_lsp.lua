@@ -45,4 +45,8 @@ return {
 			},
 		},
 	},
+	---@type LspConfig
+	wgsl_analyzer = {
+		pattern = { "*.wgsl" },
+	},
 }
