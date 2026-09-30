@@ -13,16 +13,7 @@ return {
 		},
 	},
 	---@type LspConfig
-	basedpyright = {
-		pattern = { "*.py", "*.pyx" },
-		config = {
-			analysis = {
-				useTypingExtensions = true,
-			},
-		},
-	},
-	---@type LspConfig
-	pyright = {
+	pyrefly = {
 		pattern = { "*.py", "*.pyx" },
 	},
 	---@type LspConfig

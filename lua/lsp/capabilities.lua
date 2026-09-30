@@ -1,4 +1,4 @@
-return {
+return vim.tbl_deep_extend("force", vim.lsp.protocol.make_client_capabilities() or {}, {
 	capabilities = {
 		workspace = {
 			didChangeWatchedFiles = {
@@ -62,4 +62,4 @@ return {
 			},
 		},
 	},
-}
+})

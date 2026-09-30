@@ -37,7 +37,7 @@ return {
 					opts,
 				},
 				{
-					"<leader>cr",
+					"<leader>rf",
 					buf.references,
 					opts,
 				},
