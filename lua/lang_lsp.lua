@@ -19,6 +19,17 @@ return {
 	---@type LspConfig
 	ruff = {
 		pattern = { "*.py", "*.pyx" },
+		config = {
+			init_options = {
+				settings = {
+					showSyntaxErrors = false,
+				},
+			},
+		},
+	},
+	---@type LspConfig
+	ty = {
+		pattern = { "*.py", "*.pyx" },
 	},
 	---@type LspConfig
 	rust_analyzer = {

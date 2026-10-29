@@ -4,7 +4,7 @@ return {
 		"nvim-lua/plenary.nvim",
 		"MunifTanjim/nui.nvim",
 	},
-	enabled = true,
+	enabled = false,
 	lazy = false,
 	opts = {
 		filesystem = {

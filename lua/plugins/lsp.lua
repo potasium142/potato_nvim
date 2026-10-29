@@ -23,7 +23,10 @@ return {
 				},
 				{
 					"[d",
-					diag.goto_prev,
+					-- diag.goto_prev,
+					function()
+						diag.jump({ count = -1, float = true })
+					end,
 					opts,
 				},
 				{
@@ -43,7 +46,10 @@ return {
 				},
 				{
 					"]d",
-					diag.goto_next,
+					-- diag.goto_next,
+					function()
+						diag.jump({ count = 1, float = true })
+					end,
 					opts,
 				},
 			}
